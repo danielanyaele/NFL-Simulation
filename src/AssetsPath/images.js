@@ -31,7 +31,7 @@ import Titans from "../assets/Images/titans.png";
 import Vikings from "../assets/Images/vikings.png";
 import Fortyniners from "../assets/Images/49ers.png";
 
-const ImagesPaths = {
+const ImagePaths = {
   Bears,
   Bengals,
   Bills,
@@ -66,4 +66,4 @@ const ImagesPaths = {
   Fortyniners,
 };
 
-export default ImagesPaths;
+export default ImagePaths;

@@ -4,7 +4,7 @@ import fixtureReducer from "../../Reducers/fixtureReducer";
 import FixturePrototype from "./FixtureProto";
 import Ball from "../../assets/SVG/ball.svg";
 import { useStopwatch } from "react-timer-hook";
-import createImagePath from "./createImagePath";
+import createImagePath from "../../assetsPath/createImagePath";
 import storeResults from "../../Data/storeAllResults";
 
 const Fixture = ({ details }) => {
