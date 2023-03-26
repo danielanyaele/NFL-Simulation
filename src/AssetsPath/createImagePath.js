@@ -1,4 +1,4 @@
-import imagePath from "../../assetsPath/images";
+import imagePath from "./images";
 
 const createImagePath = (fixture) => {
   const teams = fixture.split(" - ");
@@ -19,8 +19,8 @@ const createImagePath = (fixture) => {
   const exception2 =
     teamTwoSvgName === "49ers" ? "Fortyniners" : teamTwoSvgName;
 
-  const teamOnePath = `${imagesPath[exception1]}`;
-  const teamTwoPath = `${imagesPath[exception2]}`;
+  const teamOnePath = `${imagePath[exception1]}`;
+  const teamTwoPath = `${imagePath[exception2]}`;
 
   return {
     homeTeam,
