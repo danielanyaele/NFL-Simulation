@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-image: linear-gradient(to right bottom, #35b4f3, #4090e8ff);
+  min-height: 100vh;
+  min-width: 100vw;
+ 
+}
+
+
+/*** MEDIA QUERIES ******/
+
+/* 400px */
+@media only screen and (max-width: 25rem) {
+  html {
+    font-size: 50%;
+  }
+}
+
+

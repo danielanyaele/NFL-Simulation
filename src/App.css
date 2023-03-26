@@ -1,0 +1,64 @@
+.container {
+  position: relative;
+  margin: 2rem auto;
+  width: 60rem;
+  min-height: 50rem;
+  height: auto;
+  background-color: #fefefe;
+  box-shadow: 0.15rem 0.2rem 0.4rem 0.2rem #0000004d;
+}
+
+.fixtures > div:not(:last-child) {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(205, 70%, 75%);
+  z-index: 1000;
+  opacity: 0.6;
+}
+
+.countdown {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  background-color: #4090e8;
+  z-index: 2000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  font-size: 5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+/* 700px */
+@media only screen and (max-width: 40.625rem) {
+  .container {
+    margin: 0 auto;
+    width: 100vw;
+    height: auto;
+  }
+
+
+  .overlay {
+    height: 100vh;
+    width: 100vw;
+  }
+}
