@@ -1,13 +1,13 @@
 const fixtures = [
   {
     fixture: "Philadelphia Eagles - Kansas City Chiefs",
-    team1: [7, 3, 3, 2, 6, 7],
-    team2: [3, 2, 3, 7, 2, 9],
+    team1: [7, 3, 13, 12, 16, 7],
+    team2: [3, 2, 13, 17, 12, 9],
   },
   {
     fixture: "Cleveland Browns - Detroit Lions",
-    team1: [6, 3, 2, 2, 9, 7],
-    team2: [3, 9, 3, 7, 2, 9],
+    team1: [6, 3, 12, 12, 19, 7],
+    team2: [3, 9, 13, 17, 12, 9],
   },
   {
     fixture: "Buffalo Bills - Dallas Cowboys",

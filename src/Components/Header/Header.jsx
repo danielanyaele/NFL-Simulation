@@ -6,7 +6,7 @@ const Header = () => {
   const [breakType, setBreakType] = useState("");
   const [secondHalfTime, setSecondHalfTime] = useState(30);
   const [time, setTime] = useState(-1);
-
+  const [displayHTScore, setDisplayHTSscore] = useState(false);
 
   const { seconds, start, pause, reset } = useStopwatch({
     autoStart: false,
@@ -38,8 +38,11 @@ const Header = () => {
       }, 5000);
     }
 
+    if (time === 59) setDisplayHTSscore(true);
+
     //stop game clock as clock reaches 48secs for fulltime.
     if (time === 60) {
+      
       pause();
       setBreakType("FT");
     }
@@ -50,12 +53,11 @@ const Header = () => {
   return (
     <>
       <div className="header">
-       
+        <div className="header__title">NFL Live</div>
+
+        {displayHTScore && <div className="header__game-status">HT</div>}
+
         <div className="header__timer">{breakType ? breakType : time}</div>
-
-        <div className="header__title">NFL Virtual</div>
-
-        <div className="header__game-status" >Live</div>
       </div>
     </>
   );

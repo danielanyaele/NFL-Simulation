@@ -2,8 +2,8 @@ const FixturePrototype = {
   fixture: undefined,
   scoringInterval: undefined,
   gameDetails: {
-    "HT-Score": undefined,
-    "FT-Score": undefined,
+    "HT-Score": { team1: undefined, team2: undefined },
+    "FT-Score": { team1: undefined, team2: undefined },
   },
   nextPointIndex: 0,
   hasScored: false,

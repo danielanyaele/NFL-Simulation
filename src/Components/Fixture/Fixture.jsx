@@ -10,6 +10,9 @@ import storeResults from "../../Data/storeAllResults";
 const Fixture = ({ details }) => {
   const [state, dispatch] = useReducer(fixtureReducer, FixturePrototype);
   const [endOfMatch, setEndOfMatch] = useState(-1);
+  const [displayHTScore, setDisplayHTSscore] = useState(false);
+  const [HTScore, setHTScore] = useState({HTScore1:0, HTScore2:0});
+ 
 
   const { seconds, start, pause, reset } = useStopwatch({
     autoStart: false,
@@ -75,6 +78,11 @@ const Fixture = ({ details }) => {
       pause();
       //compiles results for all fixtures
       storeResults(state);
+      setHTScore({
+        HTScore1: state["gameDetails"]["HT-Score"]["team1"],
+        HTScore2: state["gameDetails"]["HT-Score"]["team2"],
+      });
+      setDisplayHTSscore(true);
     }
 
     setEndOfMatch(endOfMatch + 1);
@@ -101,6 +109,12 @@ const Fixture = ({ details }) => {
             >
               +{state.team1PointsScored}
             </div>
+            {displayHTScore && (
+              <div className="halftime-score-1">
+                {HTScore.HTScore1}
+              </div>
+            )}
+
             <div className="team__one-scores__current">
               {state.team1CurPoints}
             </div>
@@ -126,6 +140,13 @@ const Fixture = ({ details }) => {
             >
               +{state.team2PointsScored}
             </div>
+
+            {displayHTScore && (
+              <div className="halftime-score-2">
+                {HTScore.HTScore2}
+              </div>
+            )}
+
             <div className="team__two-scores__current">
               {state.team2CurPoints}
             </div>
