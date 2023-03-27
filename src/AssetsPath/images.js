@@ -66,4 +66,4 @@ const ImagePaths = {
   Fortyniners,
 };
 
-export default ImagePaths;
+export { ImagePaths };
