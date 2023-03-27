@@ -14,7 +14,7 @@ import Dolphins from "../assets/Images/dolphins.png";
 import Eagles from "../assets/Images/eagles.png";
 import Falcons from "../assets/Images/falcons.png";
 import Giants from "../assets/Images/giants.png";
-import Jaguars from "../assets/Images/Jaguars.png";
+import Jaguars from "../assets/Images/jaguars.png";
 import Jets from "../assets/Images/jets.png";
 import Lions from "../assets/Images/lions.png";
 import Packers from "../assets/Images/packers.png";
