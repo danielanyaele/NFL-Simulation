@@ -16,7 +16,7 @@ const Header = () => {
   useEffect(() => {
     setTimeout(() => {
       start();
-    }, 4000);
+    }, 6000);
   }, []);
 
   //Handles Game Clock
@@ -50,10 +50,10 @@ const Header = () => {
   return (
     <>
       <div className="header">
-        {/* <div className="header__timer">{breakType ? breakType : clock}</div> */}
+       
         <div className="header__timer">{breakType ? breakType : time}</div>
 
-        <div className="header__title">American Football</div>
+        <div className="header__title">NFL Virtual</div>
 
         <div className="header__game-status" >Live</div>
       </div>

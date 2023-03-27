@@ -6,7 +6,7 @@ import Fixture from "./Components/Fixture/Fixture";
 import "./App.css";
 
 function App() {
-  const [countdown, setCountdown] = useState(5);
+  const [countdown, setCountdown] = useState(6);
   const [startGame, setStartGame] = useState(false);
 
   const { seconds, pause } = useStopwatch({
