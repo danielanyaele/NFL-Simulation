@@ -53,7 +53,7 @@ const Header = () => {
   return (
     <>
       <div className="header">
-        <div className="header__title">NFL Live</div>
+        <div className="header__title">NFL Virtual</div>
 
         {displayHTScore && <div className="header__game-status">HT</div>}
 
