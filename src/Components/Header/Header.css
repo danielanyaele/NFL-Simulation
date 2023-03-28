@@ -15,6 +15,8 @@
   flex: 0 0 42%;
 }
 
+
+/* 600px */
 @media only screen and (max-width: 37.5rem) {
   .header {
     height: 6rem;
