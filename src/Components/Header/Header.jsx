@@ -38,11 +38,11 @@ const Header = () => {
       }, 5000);
     }
 
+    // display hallftime score
     if (time === 59) setDisplayHTSscore(true);
 
     //stop game clock as clock reaches 48secs for fulltime.
     if (time === 60) {
-      
       pause();
       setBreakType("FT");
     }
