@@ -78,6 +78,8 @@ const Fixture = ({ details }) => {
       pause();
       //compiles results for all fixtures
       storeResults(state);
+
+      //display halftime result
       setHTScore({
         HTScore1: state["gameDetails"]["HT-Score"]["team1"],
         HTScore2: state["gameDetails"]["HT-Score"]["team2"],
